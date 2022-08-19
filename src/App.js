@@ -1,11 +1,18 @@
 import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Navbar from './Pages/Shared/Navbar';
 
 
 function App() {
   return (
     <div>
-      <h1>Hello From Educationist</h1>
-      <button class="btn btn-primary">Button</button>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
