@@ -6,7 +6,7 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/services">Services</Link></li>
-        <li><Link to="/reviews">Reviews</Link></li>
+        <li><Link to="/review">Review</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact US</Link></li>      
     </>
@@ -31,7 +31,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">
+                <a class="btn btn-primary">
                 <Link to="/login">Login</Link>
                 </a>
             </div>

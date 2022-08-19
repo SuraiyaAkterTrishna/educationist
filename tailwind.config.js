@@ -6,3 +6,4 @@ module.exports = {
   },
   plugins: [require("daisyui")],
 }
+// rgb(16,137,255)
