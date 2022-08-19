@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from '../Shared/Navbar';
+import Banner from './Banner';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home Component</h1>
+            <Banner></Banner>
         </div>
     );
 };
