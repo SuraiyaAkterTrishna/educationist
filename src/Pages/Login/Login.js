@@ -21,7 +21,7 @@ const Login = () => {
     
     const navigate = useNavigate();
     const location = useLocation();
-    let from = location.state?.from?.pathname || "/services";
+    let from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
         if(user || gUser){
