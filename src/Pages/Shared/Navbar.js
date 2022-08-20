@@ -4,10 +4,9 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/icons/logo.png';
 import auth from '../../firebase.init';
-import Login from '../Login/Login';
 
 const Navbar = () => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const logout = () => {
         signOut(auth);
@@ -15,6 +14,8 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/services">Services</Link></li>
+        <li><Link to="/reviews">Reviews</Link></li>
+        <li><Link to="/policy">Our Policy</Link></li>
     </>
     return (
         <div class="navbar bg-base-100">
@@ -37,7 +38,27 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-            {user ? <button className='btn btn-primary' onClick={logout}>Sign Out</button> : <Link  className='btn btn-primary' to="/login">Login</Link>}
+            <div className="flex justify-around items-center">
+          {user && (
+            <div class="avatar">
+              <div class="w-12 rounded-full">
+                <img src={user?.photoURL} alt="" />
+              </div>
+            </div>
+          )}
+          {user && (
+            <p className="text-primary font-bold mx-2">{user?.displayName} </p>
+          )}
+        </div>
+        {user ? (
+          <button onClick={logout} class="btn btn-primary">
+            Log Out
+          </button>
+        ) : (
+          <Link to="/login" class="btn btn-primary">
+            Login
+          </Link>
+        )}
             </div>
         </div>
     );
