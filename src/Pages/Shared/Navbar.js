@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/icons/logo.png';
+import Login from '../Login/Login';
 
 const Navbar = () => {
     const menuItems = <>
@@ -31,9 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn btn-primary">
-                <Link to="/login">Login</Link>
-                </a>
+                <Link class="btn btn-primary" to="/login">Login</Link>
             </div>
         </div>
     );
