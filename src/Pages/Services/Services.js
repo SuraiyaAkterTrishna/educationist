@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Service from '../Services/Service';
-import Banner from './Banner';
-import Features from './Features';
+import Service from './Service';
 
-const Home = () => {
+const Services = () => {
     const[services, setServices] = useState([]);
     useEffect( () => {
         fetch('service.json')
@@ -12,10 +10,7 @@ const Home = () => {
     }, [])
     return (
         <div>
-            <Banner></Banner>
-            <Features></Features>
-            <div>
-            <h1 className='text-7xl text-center font-bold my-20'>Find Course With Top Categories</h1>
+            <h1 className='text-7xl text-center font-bold my-5'>Find Course With Top Categories</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20'>
                 {
                     services.map(service => <Service
@@ -25,8 +20,7 @@ const Home = () => {
                 }
             </div>
         </div>
-        </div>
     );
 };
 
-export default Home;
+export default Services;

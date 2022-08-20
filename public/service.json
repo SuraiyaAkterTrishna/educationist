@@ -1,0 +1,62 @@
+[
+    {
+      "_id": 1,
+      "name": "Learn Python Programming Beginner",
+      "img": "http://skilify.theuxuidesigner.com/images/webp/crd-img.webp",
+      "ratings": "5",
+      "instructorImg": "http://skilify.theuxuidesigner.com/images/webp/profile-img1.webp",
+      "instructorName": "Petey Cruiser",
+      "oldPrice": "200",
+      "newPrice": "150" 
+    },
+    {
+      "_id": 2,
+      "name": "Statistics Data Science and Business Analysis",
+      "img": "http://skilify.theuxuidesigner.com/images/webp/crd-img2.webp",
+      "ratings": "5",
+      "instructorImg": "http://skilify.theuxuidesigner.com/images/webp/profile-img.webp",
+      "instructorName": "Nicole Brown",
+      "oldPrice": "150",
+      "newPrice": "99" 
+    },
+    {
+      "_id": 3,
+      "name": "Learn HTML5 Programming Beginning",
+      "img": "http://skilify.theuxuidesigner.com/images/webp/crd-img3.webp",
+      "ratings": "4.5",
+      "instructorImg": "http://skilify.theuxuidesigner.com/images/webp/profile-img2.webp",
+      "instructorName": "Anna Sthesia",
+      "oldPrice": "100",
+      "newPrice": "70" 
+    },
+    {
+      "_id": 4,
+      "name": "Software Development From A to Z Beginner",
+      "img": "http://skilify.theuxuidesigner.com/images/webp/crd-img3.webp",
+      "ratings": "4.2",
+      "instructorImg": "http://skilify.theuxuidesigner.com/images/webp/profile-img3.webp",
+      "instructorName": "Lilly Cruise",
+      "oldPrice": "250",
+      "newPrice": "220" 
+    },
+    {
+      "_id": 5,
+      "name": "Graphic Design Masterclass for Beginning",
+      "img": "http://skilify.theuxuidesigner.com/images/webp/crd-img4.webp",
+      "ratings": "5",
+      "instructorImg": "http://skilify.theuxuidesigner.com/images/webp/profile-img4.webp",
+      "instructorName": "Poul Molive",
+      "oldPrice": "100",
+      "newPrice": "50" 
+    },
+    {
+      "_id": 6,
+      "name": "The Complete JavaScript Course Beginner",
+      "img": "http://skilify.theuxuidesigner.com/images/webp/crd-img5.webp",
+      "ratings": "4.5",
+      "instructorImg": "http://skilify.theuxuidesigner.com/images/webp/profile-img5.webp",
+      "instructorName": "Pankaj Kumar",
+      "oldPrice": "270",
+      "newPrice": "320" 
+    }
+  ]
