@@ -6,9 +6,9 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/services">Services</Link></li>
-        <li><Link to="/review">Review</Link></li>
+        {/* <li><Link to="/review">Review</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact US</Link></li>      
+        <li><Link to="/contact">Contact US</Link></li>       */}
     </>
     return (
         <div class="navbar bg-base-100">
